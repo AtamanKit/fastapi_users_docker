@@ -19,7 +19,7 @@ from .dependecies import (
     create_access_token,
     get_password_hash
 )
-from src.settings import db, ACCESS_TOKEN_EXPIRE_MINUTES
+from .settings import db, ACCESS_TOKEN_EXPIRE_MINUTES
 
 from typing import List
 from datetime import datetime, timedelta
@@ -28,7 +28,7 @@ import re
 
 router = APIRouter()
 
-# ============= Creating path operation ==============
+# ============= Creating path operations ==============
 @router.post("/", response_description="Add new user", response_model=UserModel)
 async def create_user(user: UserModel):
     if re.match("admin|dev|simple mortal", user.role):

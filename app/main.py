@@ -6,8 +6,8 @@ from fastapi import (
     Request,
 )
 
-from src.dependecies import authenticate_user
-from src.routers import router
+from .src.dependecies import authenticate_user
+from .src.routers import router
 
 import base64
 import binascii
@@ -42,4 +42,5 @@ async def authenticate(request: Request, call_next):
     response = await call_next(request)
     return response
 
+# ================= Routers inclusion from src directory ===============
 app.include_router(router)

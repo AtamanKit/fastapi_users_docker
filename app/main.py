@@ -6,8 +6,8 @@ from fastapi import (
     Request,
 )
 
-from .src.dependecies import authenticate_user
-from .src.routers import router
+from src.dependecies import authenticate_user
+from src.routers import router
 
 import base64
 import binascii

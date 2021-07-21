@@ -1,6 +1,7 @@
 from fastapi.security import OAuth2PasswordBearer
 from passlib.context import CryptContext
 
+import os
 import motor.motor_asyncio
 
 # ================= Creating necessary variables ========================
@@ -15,5 +16,5 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 #----------------- Database variables (MongoDB) --------------------------
-client = motor.motor_asyncio.AsyncIOMotorClient("mongodb+srv://Fortask:fortask@cluster0.2mvpj.mongodb.net/DarqubeTask?retryWrites=true&w=majority")
-db = client.DarqubeTask
+client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["DB_URL"])
+db = client.myTestDB

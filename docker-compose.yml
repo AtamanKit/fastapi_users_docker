@@ -1,6 +1,19 @@
 version: "3.8"
+
 services:
     api:
         build: .
         ports: 
             - 80:80
+        environment:
+            - DB_URL=mongodb://db/myTestDB
+        volumes:
+            - .:/app
+    db:
+        image: mongo
+        ports:
+            - 27017:27017
+        volumes:
+            - taskdb:/data/db
+volumes:
+    taskdb:

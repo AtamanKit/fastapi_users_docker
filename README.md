@@ -25,7 +25,7 @@ In the application you'll have six sections:
 * For watching the current user (only if authenticated);
 * For modifying user properties (only if authenticated with admin role);
 * For deleting the user.
-* 
+
 To see the runing containers in docker, enter in the terminal:
 ```
 $ docker ps

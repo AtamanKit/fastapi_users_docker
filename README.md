@@ -1,4 +1,4 @@
-# User authentication using FastAPI (a python frameworks), MongoDM (for database), Docker Compose (for deployment)
+# User authentication using FastAPI (a python frameworks), MongoDB (for database), Docker Compose (for deployment)
 ## How to start the application
 **Watch the video:** (below the video are the commands on how to start the application)
 * https://www.youtube.com/watch?v=Bw5rQXgvHYc

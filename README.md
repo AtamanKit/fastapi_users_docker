@@ -1,9 +1,9 @@
 # User authentication using FastAPI (a python frameworks), MongoDM (for database), Docker Compose (for deployment)
 ## How to start the application
-**Watch the video** (below the video are the commands on how to start the application):
+**Watch the video:** (below the video are the commands on how to start the application)
 * https://www.youtube.com/watch?v=Bw5rQXgvHYc
 
-**The commands on how to start the application:**
+**The commands:**
 
 First you have to git clone the files by entering in your terminal:
 ```
@@ -25,7 +25,8 @@ In the application you'll have six sections:
 * For watching the current user (only if authenticated);
 * For modifying user properties (only if authenticated with admin role);
 * For deleting the user.
-To see the runing containers in docker enter in the terminal:
+* 
+To see the runing containers in docker, enter in the terminal:
 ```
 $ docker ps
 ```
